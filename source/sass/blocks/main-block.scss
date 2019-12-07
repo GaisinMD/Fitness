@@ -4,6 +4,7 @@
   display: flex;
   width: 84.91%;
   max-width: 1160px;
+  min-width: 1000px;
   color: $white;
 }
 
@@ -14,10 +15,11 @@
 .main-block__main {
   display: flex;
   flex-direction: column;
-  margin-left: 19px;
-  margin-right: 64px;
+  margin-left: 1.63%;
+  margin-right: 5.51%;
   margin-bottom: 51px;
   width: 377px;
+  min-width: 350px;
 }
 
 .main-block__main h2 {

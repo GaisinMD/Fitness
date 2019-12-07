@@ -14,3 +14,11 @@
   padding-bottom: 14px;
   background-color: transparent;
 }
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.button:focus {
+  outline: 3px solid invert;
+}
