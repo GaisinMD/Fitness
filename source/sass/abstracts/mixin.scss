@@ -1,3 +1,12 @@
+@mixin roboto-condensend($property) {
+  font-family: "Roboto Condensend", "Arial", sans-serif;
+  font-weight: $property;
+}
+
+@mixin bebas {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+}
+
 @mixin zero-list {
   margin-top: 0;
   margin-bottom: 0;

@@ -1,0 +1,73 @@
+.main-block {
+  @include bebas;
+  @include margin-auto;
+  display: flex;
+  width: 84.91%;
+  max-width: 1160px;
+  color: $white;
+}
+
+.main-block img {
+  margin-top: -4px;
+}
+
+.main-block__main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 19px;
+  margin-right: 64px;
+  margin-bottom: 51px;
+  width: 377px;
+}
+
+.main-block__main h2 {
+  font-weight: 700;
+  text-align: right;
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.035em;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.main-block__city {
+  text-align: right;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin-top: 112px;
+  margin-bottom: 0;
+  width: 100%;
+  order: -1;
+}
+
+.main-block__list {
+  @include zero-list;
+  @include roboto-condensend(400);
+  text-align: right;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -85px;
+  margin-right: 264px;
+  margin-bottom: 74px;
+}
+
+.main-block__button {
+  border: 4px solid $white;
+  padding-top: 20px;
+  width: 232px;
+  min-height: 60px;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.main-block__socials {
+  @include zero-list;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 33px;
+}
+
+.main-block__socials li {
+  margin-bottom: 15px;
+}
