@@ -127,6 +127,7 @@
   .main-block {
     width: 90.62%;
     min-width: 290px;
+    max-width: 380px;
   }
 
   .main-block__main {
@@ -140,6 +141,7 @@
     font-size: 78px;
     line-height: 78px;
     margin-top: 7px;
+    min-height: 156px;
   }
 
   .main-block__city {
