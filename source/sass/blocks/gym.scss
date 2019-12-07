@@ -1,0 +1,32 @@
+.gym {
+  @include margin-auto;
+  display: flex;
+  padding-top: 120px;
+  width: 84.91%;
+  max-width: 1160px;
+  min-width: 1000px;
+  color: $dark-blue;
+}
+
+.gym__text {
+  width: 30.17%;
+}
+
+.gym__text h2 {
+  @include bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.gym__text span {
+  @include roboto-condensed(400);
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.gym__text p {
+  @include roboto-condensed(300);
+  font-size: 16px;
+  line-height: 24px;
+}
