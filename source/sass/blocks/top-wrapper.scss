@@ -14,3 +14,11 @@
     background-position-x: 10%;
   }
 }
+
+//
+@media (max-width: $mobile-max-width) {
+  .top-wrapper {
+    padding-bottom: 29px;
+    background-position-x: 10%;
+  }
+}

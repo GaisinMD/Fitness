@@ -30,14 +30,9 @@
 @media (max-width: $tablet-max-width) {
   .header {
     padding-top: 38px;
-    padding-right: 2px;
     margin-bottom: 25px;
     width: 88.28%;
     min-width: 678px;
-  }
-
-  .header__logo {
-    padding-top: 3px;
   }
 
   .header__logo img {
@@ -49,5 +44,25 @@
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
+  }
+}
+
+//
+@media (max-width: $mobile-max-width) {
+  .header {
+    padding-top: 18px;
+    margin-bottom: 25px;
+    width: 90.62%;
+    min-width: 290px;
+  }
+
+  .header__logo img {
+    width: 68px;
+    height: 15px;
+  }
+
+  .header__phone {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
