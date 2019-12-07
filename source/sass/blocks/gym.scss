@@ -44,7 +44,7 @@
 
 .gym__video {
   position: absolute;
-  top: 408px;
+  bottom: -111px;
   left: 437px;
   width: 364px;
   height: 228px;
@@ -57,11 +57,48 @@
 @media (max-width: $tablet-max-width) {
   .gym {
     flex-wrap: wrap;
-    padding-top: 120px;
+    padding-top: 74px;
     margin-bottom: 230px;
     width: 88.28%;
     min-width: 678px;
   }
 
+  .gym__text {
+    @include margin-auto;
+    width: 74.04%;
+    text-align: center;
+    margin-bottom: 36px;
+  }
 
+  .gym__text h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 24px;
+    margin-bottom: 11px;
+  }
+
+  .gym__text span {
+    margin-bottom: 33px;
+  }
+
+  .gym__text p:not(:first-of-type) {
+    display: none;
+  }
+
+  .gym__picture {
+    @include margin-auto;
+  }
+
+  .gym__picture img {
+    width: 678px;
+    height: 345px;
+  }
+
+  .gym__video {
+    bottom: -80px;
+    left: calc(50% - 133px);
+    width: 266px;
+    height: 167px;
+    background-size: contain;
+  }
 }
