@@ -102,3 +102,52 @@
     background-size: contain;
   }
 }
+
+//
+@media (max-width: $mobile-max-width) {
+  .gym {
+    flex-wrap: wrap;
+    padding-top: 44px;
+    margin-bottom: 230px;
+    width: 100%;
+    min-width: 320px;
+  }
+
+  .gym__text {
+    width: 90.62%;
+    text-align: left;
+    margin-bottom: 26px;
+  }
+
+  .gym__text h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+
+  .gym__text span {
+    margin-bottom: 23px;
+  }
+
+  .gym__text p {
+    padding-right: 27px;
+  }
+
+  .gym__picture {
+    margin-bottom: 36px;
+  }
+
+  .gym__picture img {
+    width: 100%;
+    max-width: 450px;
+    height: 313px;
+  }
+
+  .gym__video {
+    @include margin-auto;
+    position: static;
+    width: 320px;
+    height: 167px;
+    background-size: cover;
+  }
+}
