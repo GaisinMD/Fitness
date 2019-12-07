@@ -25,3 +25,29 @@
   text-decoration: none;
   color: $white;
 }
+
+//
+@media (max-width: $tablet-max-width) {
+  .header {
+    padding-top: 38px;
+    padding-right: 2px;
+    margin-bottom: 25px;
+    width: 88.28%;
+    min-width: 678px;
+  }
+
+  .header__logo {
+    padding-top: 3px;
+  }
+
+  .header__logo img {
+    width: 82px;
+    height: 17px;
+  }
+
+  .header__phone {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+}
