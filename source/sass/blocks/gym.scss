@@ -1,7 +1,9 @@
 .gym {
   @include margin-auto;
+  position: relative;
   display: flex;
   padding-top: 120px;
+  margin-bottom: 230px;
   width: 84.91%;
   max-width: 1160px;
   min-width: 1000px;
@@ -9,7 +11,10 @@
 }
 
 .gym__text {
-  width: 30.17%;
+  margin-left: 5.17%;
+  margin-right: 7.65%;
+  width: 30.27%;
+  min-width: 283px;
 }
 
 .gym__text h2 {
@@ -17,16 +22,46 @@
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
+  margin-top: 44px;
+  margin-bottom: 11px;
 }
 
 .gym__text span {
   @include roboto-condensed(400);
+  display: block;
   font-size: 18px;
   line-height: 27px;
+  margin-bottom: 40px;
 }
 
 .gym__text p {
   @include roboto-condensed(300);
   font-size: 16px;
   line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.gym__video {
+  position: absolute;
+  top: 408px;
+  left: 437px;
+  width: 364px;
+  height: 228px;
+  background-image: url("/img/video.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+//
+@media (max-width: $tablet-max-width) {
+  .gym {
+    flex-wrap: wrap;
+    padding-top: 120px;
+    margin-bottom: 230px;
+    width: 88.28%;
+    min-width: 678px;
+  }
+
+
 }
