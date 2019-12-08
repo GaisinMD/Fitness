@@ -6,8 +6,8 @@
   margin-bottom: 230px;
   padding-top: 75px;
   padding-bottom: 115px;
-  width: 84.91%;
   max-width: 1160px;
+  width: 84.91%;
   min-width: 1000px;
 }
 
@@ -90,6 +90,7 @@
 .subscription__time input:checked + label::after {
   background-color: $scarlet;
 }
+
 ////
 
 .subscription__list {
@@ -99,4 +100,45 @@
   width: 100%;
   color: $dark-blue;
   z-index: 1;
+}
+
+//
+@media (max-width: $tablet-max-width) {
+  .subscription {
+    margin-bottom: 0;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    max-width: 500px;
+    width: 57.55%;
+    min-width: 442px;
+  }
+
+  .subscription::before {
+    right: -165px;
+    bottom: -125px;
+    width: 347px;
+    height: 444px;
+    background-image: url("../img/disks_table.png");
+  }
+
+  .subscription h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+
+  .subscription__time {
+    margin-bottom: 45px;
+  }
+
+  .subscription__time label {
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 50px;
+  }
+
+  .subscription__list {
+    display: flex;
+    flex-direction: column;
+  }
 }
