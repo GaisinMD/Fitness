@@ -81,8 +81,10 @@
   border: none;
   background-image: linear-gradient(to bottom right, #d10a42 0%, #00359f 100%);
 }
+
 ///
 
+//
 @media (max-width: $tablet-max-width) {
   .item-subcription {
     margin-right: 0;
@@ -93,5 +95,40 @@
 
   .item-subcription__price {
     bottom: 7px;
+  }
+}
+
+//
+@media (max-width: $mobile-max-width) {
+  .item-subcription {
+    min-width: 290px;
+    padding-top: 44px;
+    padding-bottom: 48px;
+    margin-bottom: 35px;
+  }
+
+  .item-subcription h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .item-subcription__price-block {
+    margin-bottom: 26px;
+  }
+
+
+  .item-subcription__price-shadow {
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .item-subcription__price {
+    font-size: 48px;
+    line-height: 72px;
+    left: 17px;
+  }
+
+  .item-subcription__price-numeric {
+    margin-right: 10px;
   }
 }
