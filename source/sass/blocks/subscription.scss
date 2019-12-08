@@ -1,0 +1,102 @@
+.subscription {
+  @include margin-auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 230px;
+  padding-top: 75px;
+  padding-bottom: 115px;
+  width: 84.91%;
+  max-width: 1160px;
+  min-width: 1000px;
+}
+
+.subscription::before {
+  content: "";
+  position: absolute;
+  right: -105px;
+  bottom: -150px;
+  width: 287px;
+  height: 494px;
+  background-image: url("../img/disks.png");
+}
+
+.subscription h2 {
+  @include margin-auto;
+  @include bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $dark-blue;
+  margin-bottom: 38px;
+}
+
+///
+.subscription__time {
+  @include margin-auto;
+  position: relative;
+  padding: 0;
+  border: none;
+  margin-bottom: 35px;
+  padding-bottom: 13px;
+}
+
+.subscription__time::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(120, 120, 120, 0.2);
+}
+
+.subscription__time label {
+  @include roboto-condensed(400);
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+  margin-right: 45px;
+  padding-bottom: 13px;
+}
+
+.subscription__time label:last-of-type {
+  margin-right: 0;
+}
+
+.subscription__time label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+}
+
+.subscription__time label:hover {
+  opacity: 0.5;
+}
+
+.subscription__time label:hover::after {
+  background-color: $blue;
+}
+
+.subscription__time input:checked + label {
+  color: $dark-blue;
+}
+
+.subscription__time input:checked + label::after {
+  background-color: $scarlet;
+}
+////
+
+.subscription__list {
+  @include roboto-condensed(700);
+  @include zero-list;
+  display: flex;
+  width: 100%;
+  color: $dark-blue;
+  z-index: 1;
+}
