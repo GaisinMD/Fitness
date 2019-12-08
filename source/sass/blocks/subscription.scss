@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 230px;
+  margin-bottom: 120px;
   padding-top: 75px;
   padding-bottom: 115px;
   max-width: 1160px;
@@ -83,11 +83,11 @@
   background-color: $blue;
 }
 
-.subscription__time input:checked+label {
+.subscription__time input:checked + label {
   color: $dark-blue;
 }
 
-.subscription__time input:checked+label::after {
+.subscription__time input:checked + label::after {
   background-color: $scarlet;
 }
 

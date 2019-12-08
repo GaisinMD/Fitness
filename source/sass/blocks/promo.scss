@@ -1,0 +1,23 @@
+.promo {
+  @include margin-auto;
+  display: flex;
+  margin-bottom: 120px;
+  max-width: 1160px;
+  width: 84.91%;
+  min-width: 1000px;
+}
+
+.promo__article {
+  @include roboto-condensed(400);
+  display: flex;
+  flex-wrap: wrap;
+  color: $white;
+  background-color: $scarlet;
+}
+
+.promo__article h3 {
+  @include bebas;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+}
