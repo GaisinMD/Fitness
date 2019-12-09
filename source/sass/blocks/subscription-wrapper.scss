@@ -1,3 +1,9 @@
 .subscription-wrapper {
   background-color: $light-gray;
 }
+
+@media (max-width: $tablet-max-width) {
+  .subscription-wrapper {
+    margin-bottom: 100px;
+  }
+}
