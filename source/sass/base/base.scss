@@ -26,3 +26,5 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.tns-visually-hidden { position: absolute; left: -10000em; }

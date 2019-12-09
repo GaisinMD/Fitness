@@ -1,0 +1,103 @@
+.trainers-carousel {
+  @include margin-auto;
+  position: relative;
+  margin-bottom: 120px;
+  max-width: 1160px;
+  width: 84.92%;
+  min-width: 1024px;
+}
+
+.trainers-carousel h2 {
+  @include bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $dark-blue;
+  margin-bottom: 54px;
+}
+
+.trainers-carousel__hider {
+  overflow: hidden;
+}
+
+.trainers-carousel__list {
+  @include zero-list;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.trainers-carousel__element {
+  display: block;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.trainers-carousel__element:hover article {
+  display: flex;
+}
+
+.trainers-carousel__element article {
+  @include roboto-condensed(400);
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: calc(100% - 4px);
+  color: $white;
+  background-color: rgba(16, 38, 84, 0.89);
+  padding-top: 52px;
+  padding-right: 25px;
+}
+
+.trainers-carousel__name {
+  @include margin-auto;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.trainers-carousel__discipline {
+  @include margin-auto;
+  margin-top: 0;
+  margin-bottom: 33px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.trainers-carousel__about-trainer {
+  list-style: disc;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.trainers-carousel__about-trainer li {
+  margin-bottom: 13px;
+}
+
+.trainers-carousel__arrow {
+  top: 58%;
+  width: 17px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.trainers-carousel__arrow:hover {
+  opacity: 0.5;
+}
+
+.trainers-carousel__arrow--left {
+  left: -55px;
+  display: block;
+  background: url("../img/left-arrow.svg") no-repeat;
+}
+
+.trainers-carousel__arrow--right {
+  right: -55px;
+  display: block;
+  background: url("../img/right-arrow.svg") no-repeat;
+}
