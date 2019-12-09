@@ -2,8 +2,16 @@
   background-color: $light-gray;
 }
 
+//
 @media (max-width: $tablet-max-width) {
   .subscription-wrapper {
     margin-bottom: 100px;
+  }
+}
+
+//
+@media (max-width: $mobile-max-width) {
+  .subscription-wrapper {
+    margin-bottom: 70px;
   }
 }

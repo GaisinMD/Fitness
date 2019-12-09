@@ -110,10 +110,11 @@
 .promo picture {
   display: flex;
   background-color: $scarlet;
-  align-items: center;
+  align-items: stretch;
   min-height: 500px;
 }
 
+//
 @media (max-width: $tablet-max-width) {
   .promo {
     max-width: 800px;
@@ -195,5 +196,30 @@
 
   .promo picture {
     min-height: 292px;
+  }
+}
+
+//
+@media (max-width: $mobile-max-width) {
+  .promo {
+    flex-direction: column;
+    min-width: 290px;
+    width: 90.62%;
+    max-width: 690px;
+  }
+
+  .promo__article {
+    width: 100%;
+    max-width: 100%;
+    min-width: 290px;
+    min-height: 292px;
+  }
+
+  .promo__button {
+    max-width: 260px;
+  }
+
+  .promo picture img {
+    min-width: 100%;
   }
 }
