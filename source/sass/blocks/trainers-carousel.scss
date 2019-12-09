@@ -4,7 +4,7 @@
   margin-bottom: 120px;
   max-width: 1160px;
   width: 84.92%;
-  min-width: 1024px;
+  min-width: 950px;
 }
 
 .trainers-carousel h2 {
@@ -30,10 +30,12 @@
   display: block;
   position: relative;
   flex: 0 0 auto;
+  width: 25%;
 }
 
 .trainers-carousel__element:hover article {
   display: flex;
+  width: 86.7%;
 }
 
 .trainers-carousel__element article {
@@ -43,7 +45,7 @@
   flex-direction: column;
   top: 0;
   left: 0;
-  width: 260px;
+  width: 100%;
   height: calc(100% - 4px);
   color: $white;
   background-color: rgba(16, 38, 84, 0.89);
@@ -69,7 +71,7 @@
 
 .trainers-carousel__about-trainer {
   list-style: disc;
-  margin-left: 30px;
+  margin-left: 12.69%;
   font-size: 14px;
   line-height: 21px;
 }
@@ -91,13 +93,13 @@
 }
 
 .trainers-carousel__arrow--left {
-  left: -55px;
+  right: calc(111% - 88px);
   display: block;
   background: url("../img/left-arrow.svg") no-repeat;
 }
 
 .trainers-carousel__arrow--right {
-  right: -55px;
+  left: calc(111% - 88px);
   display: block;
   background: url("../img/right-arrow.svg") no-repeat;
 }
