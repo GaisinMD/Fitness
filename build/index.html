@@ -371,8 +371,10 @@
             <a href="#">Подробнее</a>
           </div>
           <picture>
-            <source type="image/webp" srcset="img/action@1x.webp 1x, img/action@2x.webp 2x">
-            <img src="img/action@1x.jpg" srcset="img/action@2x.jpg 2x" alt="Девушка в спортивном костюме" width="280" height="462">
+            <source type="image/webp" media="(min-width: 1299px)" srcset="img/action@1x.webp 1x, img/action@2x.webp 2x">
+            <source media="(min-width: 1299px)" srcset="img/action@1x.jpg 1x, img/action@2x.jpg 2x">
+            <source type="image/webp" srcset="img/action-table@1x.webp 1x, img/action-table@2x.webp 2x">
+            <img src="img/action-table@1x.jpg" srcset="img/action-table@2x.jpg 2x" alt="Девушка в спортивном костюме" width="280" height="462">
           </picture>
         </div>
         <ul class="stock__list">
