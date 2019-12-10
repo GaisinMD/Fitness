@@ -1,0 +1,151 @@
+.advantages {
+  @include margin-auto;
+  @include roboto-condensed(400);
+  display: flex;
+  flex-wrap: wrap;
+  color: $dark-blue;
+  margin-bottom: 120px;
+  max-width: 1160px;
+  width: 76%;
+  min-width: 1000px;
+}
+
+.advantages h2 {
+  @include bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+.advantages__wrapper-left {
+  position: relative;
+  margin-right: 1.9%;
+  width: 36.6%;
+}
+
+.advantages__wrapper-left::after {
+  position: absolute;
+  content: "";
+  top: 33%;
+  left: 0;
+  width: 90%;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+}
+
+.advantages__article {
+  display: flex;
+  position: relative;
+  margin-bottom: 156px;
+  margin-left: 30px;
+
+  &--bottom-left {
+    margin-left: 21px;
+  }
+
+  &--top-right {
+    margin-left: 48px;
+  }
+
+  &--bottom-right {
+    margin-left: 50px;
+  }
+}
+
+.advantages__label {
+  margin-right: 8.82%;
+}
+
+.advantages__label p {
+  font-size: 14px;
+  line-height: 21px;
+  color: $light-blue;
+  margin-left: -4px;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.advantages__text {
+  width: 69.6%;
+
+  &--bottom-left {
+    width: 66%;
+  }
+}
+
+.advantages__text h3 {
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-bottom: 8px;
+}
+
+.advantages__text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.advantages__article-center {
+  background-color: $dark-blue;
+  align-self: flex-start;
+  color: $white;
+  text-align: center;
+  margin-top: 2px;
+  margin-right: 1.17%;
+  width: 23.18%;
+  min-height: 307px;
+}
+
+.advantages__article-center h3 {
+  font-size: 74px;
+  line-height: 74px;
+  margin-top: 53px;
+  margin-bottom: 3px;
+}
+
+.advantages__center-label {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.advantages__center-text {
+  @include margin-auto;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 75%;
+}
+
+.advantages__wrapper-right {
+  position: relative;
+  width: 36.6%;
+}
+
+.advantages__wrapper-right::after {
+  position: absolute;
+  content: "";
+  top: 33%;
+  right: 0;
+  width: 90%;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+}
+
+//
+@media (max-width: $tablet-max-width) {
+  .advantages {
+  }
+}
