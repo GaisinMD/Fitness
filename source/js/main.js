@@ -1,6 +1,6 @@
 'use strict';
-var mobileMaxWidth = '(max-width: 767px)';
-var tabletMaxWidth = '(max-width: 1023px)';
+// var mobileMaxWidth = '(max-width: 767px)';
+// var tabletMaxWidth = '(max-width: 1023px)';
 // var itemSlides;
 
 // if (window.matchMedia(mobileMaxWidth).matches) {
@@ -24,6 +24,7 @@ var slider = tns({
   'responsive': {
     '767': {
       'items': 2,
+      'gutter': 30,
     },
     '1023': {
       'items': 4,
