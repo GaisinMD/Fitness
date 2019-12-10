@@ -3,3 +3,11 @@
   padding-bottom: 120px;
   background-color: $light-gray;
 }
+
+//
+@media (max-width: $tablet-max-width) {
+  .advantages-wrapper {
+    padding-top: 98px;
+    padding-bottom: 100px;
+  }
+}
