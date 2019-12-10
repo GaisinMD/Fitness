@@ -149,7 +149,6 @@
   .stock__main-stock img {
     min-width: 399px;
     width: 55.9%;
-    height: 462px;
   }
 
   .stock__list {
@@ -177,8 +176,74 @@
 //
 @media (max-width: $mobile-max-width) {
   .stock {
+    margin-bottom: 20px;
     max-width: 380px;
+    width: 90.62%;
+    min-width: 290px;
+  }
+
+  .stock h2 {
+    margin-bottom: 45px;
+  }
+
+  .stock__main-stock {
+    flex-direction: column;
+  }
+
+  .stock__main-offer {
+    @include margin-auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 45px;
+  }
+
+  .stock__main-time {
+    margin-left: 0;
+  }
+
+  .stock__main-price {
+    margin-left: 0;
+    margin-bottom: 29px;
+  }
+
+  .stock__main-text {
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 30px;
+    width: 75%;
+  }
+
+  .stock__main-stock a {
+    margin-left: 0;
+  }
+
+  .stock__main-stock img {
+    min-width: 290px;
+    width: 290px;
+    max-width: 290px;
+    height: 299px;
+  }
+
+  .stock__list {
+    flex-direction: column;
+  }
+
+  .stock__item {
     width: 100%;
-    min-width: 320px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 0;
+    padding-bottom: 41px;
+  }
+
+  .stock__list-offer {
+    margin-top: 29px;
+  }
+
+  .stock__list-text {
+    @include margin-auto;
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 27px;
   }
 }
