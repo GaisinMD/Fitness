@@ -21,6 +21,7 @@ var slider = tns({
   'nav': false,
   'speed': 600,
   'items': 1,
+  'gutter': 0,
   'responsive': {
     '767': {
       'items': 2,
