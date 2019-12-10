@@ -14,7 +14,7 @@
 .advantages::after {
   position: absolute;
   content: "";
-  top: 60.3%;
+  top: 63.2%;
   width: 32.6%;
   height: 2px;
   background-color: rgba(209, 10, 66, 0.2);
@@ -71,7 +71,7 @@
 }
 
 .advantages__text {
-  max-width: 185px;
+  max-width: 188px;
 
   &--right {
     max-width: 230px;
@@ -134,9 +134,14 @@
 //
 @media (max-width: $tablet-max-width) {
   .advantages {
-    max-width: 1160px;
-    width: 88.41%;
+    max-width: 780px;
+    width: 88.28%;
     min-width: 678px;
+  }
+
+  .advantages::before,
+  .advantages::after {
+    display: none;
   }
 
   .advantages h2 {
@@ -145,27 +150,34 @@
     margin-bottom: 50px;
   }
 
-  .advantages__wrapper-top {
-    margin-bottom: 50px;
-  }
-
-  .advantages__wrapper-left::after {
-    display: none;
-  }
-
-  .advantages__wrapper-left img {
-    width: 89px;
-    height: 40px;
+  .advantages__wrapper {
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
   }
 
   .advantages__article {
-    width: 45%;
+    width: 47.5%;
     margin-bottom: 0;
+  }
+
+  .advantages__label p {
+    margin-left: 0;
+  }
+
+  .advantages__article:nth-of-type(odd) img {
+    width: 85px;
+    height: 41px;
+  }
+
+  .advantages__article:nth-of-type(even) img {
+    width: 55px;
+    height: 41px;
   }
 
   .advantages__text h3 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
   }
 
   .advantages__article-center {
@@ -173,25 +185,25 @@
     width: 65.2%;
     min-width: 442px;
     min-height: 239px;
-    margin-bottom: 50px;
+    margin-top: 42px;
+    margin-bottom: 48px;
+  }
+
+  .advantages__article-center h3 {
+    margin-top: 33px;
+    margin-bottom: 0;
   }
 
   .advantages__center-label {
     font-size: 22px;
     line-height: 33px;
+    margin-bottom: 13px;
   }
 
-  .advantages__wrapper-bottom {
-    // display: flex;
-    // width: 100%;
+  .advantages__center-text {
+    margin-top: 0;
+    margin-bottom: 37px;
+    width: 40%;
   }
 
-  .advantages__wrapper-right img {
-    width: 59px;
-    height: 40px;
-  }
-
-  .advantages__wrapper-bottom::after {
-    display: none;
-  }
 }
