@@ -7,7 +7,6 @@
   color: $dark-blue;
   max-width: 1160px;
   width: 76.13%;
-  min-width: 1000px;
 }
 
 .advantages::before,
@@ -29,10 +28,6 @@
 }
 
 .advantages h2 {
-  @include bebas;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
   text-align: center;
   margin-top: 0;
   margin-bottom: 69px;
@@ -145,8 +140,7 @@
   }
 
   .advantages h2 {
-    font-size: 42px;
-    line-height: 42px;
+
     margin-bottom: 50px;
   }
 
@@ -205,7 +199,6 @@
     margin-bottom: 37px;
     width: 40%;
   }
-
 }
 
 //
@@ -217,8 +210,6 @@
   }
 
   .advantages h2 {
-    font-size: 32px;
-    line-height: 32px;
     margin-bottom: 52px;
   }
 

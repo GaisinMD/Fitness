@@ -1,0 +1,7 @@
+.stock {
+  @include margin-auto;
+  @include roboto-condensed(400);
+  color: $dark-blue;
+  max-width: 1160px;
+  width: 84.91%;
+}

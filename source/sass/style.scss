@@ -6,6 +6,7 @@
 @import "base/fonts";
 @import "base/base";
 //
+@import "components/header";
 @import "components/button";
 //
 @import "layouts/body";
@@ -21,3 +22,4 @@
 @import "blocks/trainers-carousel";
 @import "blocks/advantages";
 @import "blocks/advantages-wrapper";
+@import "blocks/stock";

@@ -27,7 +27,7 @@ var slider = tns({
       'items': 2,
       'gutter': 30,
     },
-    '1023': {
+    '1199': {
       'items': 4,
       'gutter': 40,
     },
