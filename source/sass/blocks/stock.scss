@@ -193,7 +193,7 @@
   .stock__main-offer {
     @include margin-auto;
     text-align: center;
-    padding-left: 10px;
+    // padding-left: 0px;
     padding-bottom: 45px;
   }
 
@@ -210,7 +210,7 @@
     display: inline-block;
     margin-left: 0;
     margin-bottom: 30px;
-    width: 75%;
+    width: 72%;
   }
 
   .stock__main-stock a {
