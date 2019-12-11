@@ -81,12 +81,23 @@
   }
 }
 
-@media (max-width: $tablet-max-width) {
+//
+@media (max-width: $mobile-max-width) {
   .contacts {
     @include margin-auto;
     padding-left: 0;
+    padding-bottom: 44px;
     min-width: 290px;
     width: 90.62%;
     max-width: 320px;
+  }
+
+  .contacts h2 {
+    margin-bottom: 37px;
+  }
+
+  .contacts__side {
+    margin-right: 0;
+    width: 100%;
   }
 }

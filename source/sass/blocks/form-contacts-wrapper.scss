@@ -11,3 +11,10 @@
     flex-direction: column;
   }
 }
+
+//
+@media (max-width: $tablet-max-width) {
+  .form-contacts-wrapper {
+    margin-bottom: 0;
+  }
+}
