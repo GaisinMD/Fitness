@@ -77,3 +77,87 @@
   display: block;
   background: url("../img/right-arrow.svg") no-repeat;
 }
+
+//
+@media (max-width: $tablet-max-width) {
+  .feedback-carousel {
+    width: 564px;
+  }
+
+  .feedback-carousel h2 {
+    margin-bottom: 42px;
+  }
+
+  .feedback-carousel__arrow {
+    top: 58%;
+  }
+}
+
+//
+@media (max-width: $mobile-max-width) {
+  .feedback-carousel {
+    min-width: 226px;
+    width: 70.62%;
+    max-width: 380px;
+  }
+
+  .feedback-carousel h2 {
+    margin-bottom: 44px;
+  }
+
+  .feedback-carousel__item {
+    position: relative;
+    padding-left: 0;
+    padding-top: 25px;
+    padding-bottom: 26px;
+  }
+
+  .feedback-carousel img {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .feedback-carousel__main {
+    @include margin-auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 9px;
+    width: 77.87%;
+  }
+
+  .feedback-carousel__name {
+    line-height: 26px;
+    margin-left: 99px;
+    margin-bottom: 6px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    width: 43.5%;
+    min-height: 68px;
+  }
+
+  .feedback-carousel__text {
+    @include margin-auto;
+    align-self: flex-end;
+    text-align: center;
+    min-height: 167px;
+    margin-bottom: 10px;
+  }
+
+  .feedback-carousel__arrow {
+    top: 57%;
+    width: 10px;
+    height: 19px;
+    background-size: contain;
+  }
+
+  .feedback-carousel__arrow--left {
+    left: -33px;
+  }
+
+  .feedback-carousel__arrow--right {
+    right: -33px;
+  }
+}
