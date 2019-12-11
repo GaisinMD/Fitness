@@ -1,0 +1,46 @@
+.form {
+  width: 50%;
+  background-color: $dark-blue;
+  color: $white;
+  padding-top: 65px;
+  padding-bottom: 68px;
+}
+
+.form h2 {
+  margin-top: 0;
+  margin-left: 15.08%;
+  margin-bottom: 47px;
+}
+
+.form__body {
+  @include roboto-condensed(400);
+
+  margin-left: 15.08%;
+}
+
+.form__body input {
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  background-color: $dark-blue;
+  color: $white;
+  margin-bottom: 28px;
+  margin-right: 26px;
+  padding-bottom: 5px;
+  width: 190px;
+}
+
+.form__body input::placeholder {
+  color: $white;
+}
+
+.form__body button {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 3px solid $white;
+  width: 412px;
+  height: 56px;
+}

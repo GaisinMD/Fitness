@@ -34,7 +34,7 @@
           <li>Групповые занятия</li>
           <li>Кардио-зона</li>
         </ul>
-        <a class="button main-block__button" href="#">Купить абонемент</a>
+        <a class="button main-block__button" href="#subscription">Купить абонемент</a>
       </article>
       <picture class="main-block__picture">
         <source type="image/webp" srcset="img/superman@1x.webp 1x, img/superman@2x.webp 2x">
@@ -65,7 +65,7 @@
       <div class="gym__video"></div>
     </section>
 
-    <div class="subscription-wrapper">
+    <div class="subscription-wrapper" id="subscription">
       <section class="subscription">
         <h2>Абонементы</h2>
         <fieldset class="subscription__time">
@@ -450,6 +450,19 @@
       <div class="feedback-carousel__arrow feedback-carousel__arrow--left"></div>
       <div class="feedback-carousel__arrow feedback-carousel__arrow--right"></div>
     </section>
+    <div class="form-contacts-wrapper">
+      <section class="form">
+        <h2>Бесплатное занятие </h2>
+        <form class="form__body" action="">
+          <label for="name" class="visually-hidden">Введите ваше имя</label>
+          <input name="name" id="name" type="text" placeholder="Имя" required>
+          <label for="phone" class="visually-hidden">Введите ваш телефон</label>
+          <input name="phone" id="phone" type="tel" placeholder="Телефон" pattern="^[ 0-9/(/)/+]+$" required>
+          <button type="submit" class="button form__button">Отправить</button>
+        </form>
+      </section>
+      <section class="contacts"></section>
+    </div>
 
   </main>
 
