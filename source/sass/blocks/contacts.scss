@@ -50,10 +50,33 @@
 @media (max-width: $tablet-max-width) {
   .contacts {
     @include margin-auto;
-    padding-left: 0;
+    padding-left: 32px;
     min-width: 564px;
     width: 73.43%;
     max-width: 580px;
   }
-}
 
+  .contacts h2 {
+    margin-bottom: 35px;
+  }
+
+  .contacts__side {
+    margin-right: 95px;
+    width: 41%;
+  }
+
+  .contacts__item {
+    margin-bottom: 19px;
+  }
+
+  .contacts__item h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 6px;
+  }
+
+  .contacts__item p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
