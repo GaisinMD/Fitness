@@ -52,10 +52,10 @@
 
   .form__body {
     @include margin-auto;
+    padding-left: 32px;
     min-width: 564px;
     width: 73.43%;
     max-width: 580px;
-    padding-left: 32px;
   }
 
   .form__body h2 {
@@ -73,5 +73,29 @@
     margin-left: -3px;
     width: 475px;
     height: 55px;
+  }
+}
+
+//
+@media (max-width: $tablet-max-width) {
+  .form {
+    padding-top: 67px;
+  }
+
+  .form__body {
+    padding-left: 0;
+    min-width: 290px;
+    width: 90.62%;
+    max-width: 320px;
+  }
+
+  .form__body input {
+    margin-bottom: 38px;
+    width: 100%;
+  }
+
+  .form__body button {
+    margin-left: 0;
+    width: 100%;
   }
 }
