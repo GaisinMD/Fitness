@@ -46,6 +46,10 @@
   text-decoration: none;
 }
 
+.contacts__item a:hover {
+  opacity: 0.5;
+}
+
 //
 @media (max-width: $tablet-max-width) {
   .contacts {

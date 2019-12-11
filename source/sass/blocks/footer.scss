@@ -1,0 +1,54 @@
+.footer {
+  @include margin-auto;
+  display: flex;
+  padding-top: 42px;
+  padding-bottom: 36px;
+  width: 84.91%;
+  max-width: 1160px;
+}
+
+.footer a {
+  @include roboto-condensed(400);
+  color: $white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  opacity: 0.5;
+}
+
+.footer__side {
+  display: flex;
+}
+
+.header__logo {
+  margin-right: 276px;
+  //23.79%
+}
+
+.footer__list {
+  @include zero-list;
+  display: flex;
+  align-items: center;
+}
+
+.footer__list-item {
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 40px;
+}
+
+.footer__social {
+  @include zero-list;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.footer__social-item {
+  margin-right: 25px;
+}
+
+.footer__social-item:last-of-type {
+  margin-right: 0;
+}
