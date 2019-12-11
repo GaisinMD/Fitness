@@ -22,3 +22,16 @@ var sliderTrainers = tns({
     },
   },
 });
+
+var sliderFeedback = tns({
+  'container': '.feedback-carousel__list',
+  'prevButton': '.feedback-carousel__arrow--left',
+  'nextButton': '.feedback-carousel__arrow--right',
+  'preventActionWhenRunning': true,
+  'slideBy': '1',
+  'autoWidth': true,
+  'nav': false,
+  'speed': 600,
+  'items': 1,
+  'gutter': 0,
+});

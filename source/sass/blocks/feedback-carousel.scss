@@ -1,0 +1,79 @@
+.feedback-carousel {
+  @include margin-auto;
+  position: relative;
+  margin-bottom: 116px;
+  width: 560px;
+}
+
+.feedback-carousel h2 {
+  color: $dark-blue;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.feedback-carousel__hider {
+  overflow: hidden;
+}
+
+.feedback-carousel__list {
+  @include zero-list;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.feedback-carousel__item {
+  @include roboto-condensed(400);
+  display: flex;
+  flex: 0 0 auto;
+  color: $white;
+  background-color: $medium-blue;
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  padding-left: 62px;
+  padding-top: 62px;
+  padding-bottom: 42px;
+  width: 100%;
+}
+
+.feedback-carousel img {
+  margin-right: 28px;
+}
+
+.feedback-carousel__main {
+  width: 330px;
+}
+
+.feedback-carousel__name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 14px;
+  margin-top: 0;
+}
+
+.feedback-carousel__text {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.feedback-carousel__arrow {
+  top: 60%;
+  width: 17px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.feedback-carousel__arrow:hover {
+  opacity: 0.5;
+}
+
+.feedback-carousel__arrow--left {
+  left: -57px;
+  display: block;
+  background: url("../img/left-arrow.svg") no-repeat;
+}
+
+.feedback-carousel__arrow--right {
+  right: -57px;
+  display: block;
+  background: url("../img/right-arrow.svg") no-repeat;
+}
