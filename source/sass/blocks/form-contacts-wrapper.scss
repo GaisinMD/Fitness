@@ -4,3 +4,10 @@
   width: 100%;
   max-width: 1366px;
 }
+
+//
+@media (max-width: $tablet-max-width) {
+  .form-contacts-wrapper {
+    flex-direction: column;
+  }
+}

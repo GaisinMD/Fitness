@@ -45,3 +45,15 @@
   color: $dark-blue;
   text-decoration: none;
 }
+
+//
+@media (max-width: $tablet-max-width) {
+  .contacts {
+    @include margin-auto;
+    padding-left: 0;
+    min-width: 564px;
+    width: 73.43%;
+    max-width: 580px;
+  }
+}
+
