@@ -23,7 +23,6 @@
 
 .header__logo {
   margin-right: 276px;
-  //23.79%
 }
 
 .footer__list {
@@ -51,4 +50,26 @@
 
 .footer__social-item:last-of-type {
   margin-right: 0;
+}
+
+//
+@media (max-width: $tablet-max-width) {
+  .footer {
+    padding-top: 44px;
+    padding-bottom: 40px;
+    width: 88.28%;
+    min-width: 678px;
+  }
+
+  .header__logo {
+    margin-right: 62px;
+  }
+
+  .footer__list-item {
+    margin-right: 30px;
+  }
+
+  .footer__social-item {
+    margin-right: 20px;
+  }
 }
