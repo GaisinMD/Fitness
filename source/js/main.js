@@ -4,6 +4,15 @@ var anchors = [].slice.call(document.querySelectorAll('a[href*="#"]'));
 var animationTime = 300;
 var framesCount = 20;
 
+// переменные маски ввода телефона
+var element = document.getElementById('phone');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+
+// реализация маски ввода телефона
+var mask = IMask(element, maskOptions);
+
 // реализация скролла
 anchors.forEach(function (item) {
   item.addEventListener('click', function (e) {
