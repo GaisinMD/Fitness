@@ -58,6 +58,7 @@
   color: rgba(16, 38, 84, 0.5);
   margin-right: 45px;
   padding-bottom: 13px;
+  cursor: pointer;
 }
 
 .subscription__time label:last-of-type {
@@ -82,11 +83,11 @@
   background-color: $blue;
 }
 
-.subscription__time input:checked + label {
+.subscription__time input:checked+label {
   color: $dark-blue;
 }
 
-.subscription__time input:checked + label::after {
+.subscription__time input:checked+label::after {
   background-color: $scarlet;
 }
 
