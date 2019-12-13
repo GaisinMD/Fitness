@@ -5,7 +5,7 @@
   flex-direction: column;
   margin-bottom: 120px;
   padding-top: 75px;
-  padding-bottom: 115px;
+  padding-bottom: 100px;
   max-width: 1160px;
   width: 84.91%;
 }
@@ -97,6 +97,7 @@
   @include roboto-condensed(700);
   @include zero-list;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   color: $dark-blue;
   z-index: 1;
