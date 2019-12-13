@@ -1,7 +1,7 @@
 .stock {
   @include margin-auto;
   color: $dark-blue;
-  margin-bottom: 76px;
+  margin-bottom: 69px;
   max-width: 1160px;
   width: 84.91%;
 }
@@ -85,24 +85,38 @@
 
 .stock__list {
   @include zero-list;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
   width: 48.27%;
 }
 
 .stock__item {
-  border: 7px solid transparent;
-  border-image: linear-gradient(to bottom right, #d10a42 0%, #00359f 100%);
-  border-image-slice: 1;
-  margin-bottom: 40px;
+  position: relative;
+  background-color: $white;
+  margin-bottom: 54px;
+  padding-top: 18px;
   padding-left: 28px;
   padding-bottom: 27px;
   width: 100%;
+}
+
+.stock__item::after {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: -7px;
+  width: calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-image: linear-gradient(to bottom right, #d10a42 0%, #00359f 100%);
+  z-index: -1;
 }
 
 .stock__list-offer {
   font-weight: bold;
   font-size: 26px;
   line-height: 39px;
-  margin-top: 18px;
+  margin-top: 0;
   margin-bottom: 3px;
 }
 
@@ -136,7 +150,7 @@
 
   .stock__main-stock {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     justify-content: space-between;
   }
 
@@ -157,7 +171,7 @@
   }
 
   .stock__item {
-    width: 47.78%;
+    width: 46.68%;
     display: flex;
     flex-direction: column;
     padding-bottom: 32px;
@@ -175,7 +189,7 @@
 //
 @media (max-width: $mobile-max-width) {
   .stock {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     width: 290px;
   }
 
@@ -228,13 +242,14 @@
   .stock__item {
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+    padding-top: 20px;
     padding-left: 0;
     padding-bottom: 41px;
   }
 
   .stock__list-offer {
-    margin-top: 29px;
+    margin-top: 9px;
   }
 
   .stock__list-text {

@@ -55,9 +55,13 @@
     min-width: 290px;
   }
 
-  .header__logo img {
+  .header__logo {
     width: 68px;
     height: 15px;
+  }
+
+  .header__logo img {
+    width: auto;
   }
 
   .header__phone {
