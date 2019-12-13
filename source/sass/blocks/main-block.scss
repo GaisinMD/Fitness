@@ -73,6 +73,10 @@
   margin-bottom: 15px;
 }
 
+.main-block__socials-anchor:hover {
+  opacity: 0.5;
+}
+
 //
 @media (max-width: $tablet-max-width) {
   .main-block {
