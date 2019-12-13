@@ -33,11 +33,14 @@
 ///
 .subscription__time {
   @include margin-auto;
-  position: relative;
+  // display: flex;
+  // flex-wrap: wrap;
+  // position: relative;
   padding: 0;
   border: none;
   margin-bottom: 35px;
   padding-bottom: 13px;
+  width: 100%;
 }
 
 .subscription__time::after {
@@ -58,6 +61,7 @@
   color: rgba(16, 38, 84, 0.5);
   margin-right: 45px;
   padding-bottom: 13px;
+  // width: 33%;
   cursor: pointer;
 }
 
@@ -113,9 +117,8 @@
     margin-bottom: 0;
     padding-top: 63px;
     padding-bottom: 63px;
-    max-width: 500px;
-    width: 57.55%;
-    min-width: 442px;
+    max-width: 442px;
+    width: 442px;
   }
 
   .subscription::before {
@@ -153,8 +156,8 @@
   .subscription {
     padding-top: 40px;
     padding-bottom: 35px;
-    max-width: 350px;
-    width: 90.62%;
+    max-width: 290px;
+    width: 290px;
     min-width: 290px;
   }
 
