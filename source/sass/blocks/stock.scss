@@ -123,9 +123,7 @@
 @media (max-width: $tablet-max-width) {
   .stock {
     margin-bottom: 58px;
-    max-width: 780px;
-    width: 88.28%;
-    min-width: 678px;
+    width: 678px;
   }
 
   .stock h2 {
@@ -178,9 +176,7 @@
 @media (max-width: $mobile-max-width) {
   .stock {
     margin-bottom: 38px;
-    max-width: 380px;
-    width: 90.62%;
-    min-width: 290px;
+    width: 290px;
   }
 
   .stock h2 {
@@ -194,8 +190,7 @@
   .stock__main-offer {
     @include margin-auto;
     text-align: center;
-    // padding-left: 0px;
-    padding-bottom: 45px;
+    padding-bottom: 16px;
   }
 
   .stock__main-time {
@@ -215,6 +210,7 @@
   }
 
   .stock__main-stock a {
+    margin-top: 2px;
     margin-left: 0;
   }
 
