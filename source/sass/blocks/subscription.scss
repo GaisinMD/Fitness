@@ -33,24 +33,32 @@
 ///
 .subscription__time {
   @include margin-auto;
-  // display: flex;
-  // flex-wrap: wrap;
-  // position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
   padding: 0;
   border: none;
-  margin-bottom: 35px;
-  padding-bottom: 13px;
-  width: 100%;
+  margin-bottom: 30px;
+  max-width: 345px;
 }
 
 .subscription__time::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 7px;
   width: 100%;
   height: 2px;
   background-color: rgba(120, 120, 120, 0.2);
+}
+
+.subscription__time-wrapper {
+  margin-bottom: 20px;
+  margin-right: 45px;
+}
+
+.subscription__time-wrapper:nth-of-type(3n) {
+  margin-right: 0;
 }
 
 .subscription__time label {
@@ -59,14 +67,8 @@
   font-size: 20px;
   line-height: 30px;
   color: rgba(16, 38, 84, 0.5);
-  margin-right: 45px;
   padding-bottom: 13px;
-  // width: 33%;
   cursor: pointer;
-}
-
-.subscription__time label:last-of-type {
-  margin-right: 0;
 }
 
 .subscription__time label::after {
@@ -136,13 +138,17 @@
   }
 
   .subscription__time {
-    margin-bottom: 45px;
+    width: 332px;
+    margin-bottom: 35px;
+  }
+
+  .subscription__time-wrapper {
+    margin-right: 50px;
   }
 
   .subscription__time label {
     font-size: 18px;
     line-height: 27px;
-    margin-right: 50px;
   }
 
   .subscription__list {
@@ -172,12 +178,16 @@
   }
 
   .subscription__time {
-    margin-bottom: 34px;
+    width: 290px;
+    margin-bottom: 28px;
+  }
+
+  .subscription__time-wrapper {
+    margin-right: 45px;
   }
 
   .subscription__time label {
     font-size: 16px;
     line-height: 24px;
-    margin-right: 40px;
   }
 }
