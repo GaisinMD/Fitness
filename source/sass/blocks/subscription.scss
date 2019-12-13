@@ -103,6 +103,10 @@
   z-index: 1;
 }
 
+.subscription__item {
+  width: 31.03%;
+}
+
 //
 @media (max-width: $tablet-max-width) {
   .subscription {
