@@ -64,9 +64,11 @@
 
 .main-block__socials {
   @include zero-list;
+  align-self: flex-end;
   margin-left: auto;
-  margin-top: auto;
+  // margin-top: auto;
   margin-bottom: 33px;
+  // height: auto;
 }
 
 .main-block__socials li {
