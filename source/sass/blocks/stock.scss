@@ -89,13 +89,13 @@
 }
 
 .stock__item {
-  width: 100%;
   border: 7px solid transparent;
   border-image: linear-gradient(to bottom right, #d10a42 0%, #00359f 100%);
   border-image-slice: 1;
   margin-bottom: 40px;
   padding-left: 28px;
   padding-bottom: 27px;
+  width: 100%;
 }
 
 .stock__list-offer {
