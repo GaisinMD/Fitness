@@ -83,11 +83,11 @@
   background-color: $blue;
 }
 
-.subscription__time input:checked+label {
+.subscription__time input:checked + label {
   color: $dark-blue;
 }
 
-.subscription__time input:checked+label::after {
+.subscription__time input:checked + label::after {
   background-color: $scarlet;
 }
 

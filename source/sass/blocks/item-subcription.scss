@@ -36,7 +36,8 @@
 .item-subcription__price-block {
   @include margin-auto;
   position: relative;
-  margin-bottom: 30px;
+  margin-top: 2px;
+  margin-bottom: 28px;
 }
 
 .item-subcription__price-shadow {
@@ -59,7 +60,7 @@
 
 .item-subcription__price-numeric {
   color: $blue;
-  margin-right: 13px;
+  margin-right: 10px;
 }
 
 .item-subcription__button {
@@ -113,7 +114,8 @@
   }
 
   .item-subcription__price-block {
-    margin-bottom: 26px;
+    margin-top: 2px;
+    margin-bottom: 24px;
   }
 
 
@@ -129,6 +131,6 @@
   }
 
   .item-subcription__price-numeric {
-    margin-right: 10px;
+    margin-right: 7px;
   }
 }
