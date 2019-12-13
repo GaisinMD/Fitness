@@ -25,6 +25,7 @@
   @include roboto-condensed(400);
   display: flex;
   flex: 0 0 auto;
+  align-self: flex-start;
   color: $white;
   background-color: $medium-blue;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);

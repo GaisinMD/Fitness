@@ -116,9 +116,9 @@
 //
 @media (max-width: $tablet-max-width) {
   .promo {
-    max-width: 800px;
     width: 88.28%;
     min-width: 678px;
+    max-width: 678px;
     align-items: stretch;
     margin-bottom: 98px;
   }
@@ -205,7 +205,7 @@
     flex-direction: column;
     min-width: 290px;
     width: 90.62%;
-    max-width: 380px;
+    max-width: 290px;
     margin-bottom: 68px;
   }
 
