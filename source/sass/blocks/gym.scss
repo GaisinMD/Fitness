@@ -9,6 +9,18 @@
   color: $dark-blue;
 }
 
+.gym::after {
+  content: "";
+  position: absolute;
+  top: 408px;
+  left: 437px;
+  width: 364px;
+  height: 228px;
+  background-image: url("../img/video.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
 .gym__text {
   margin-left: 5.17%;
   margin-right: 7.65%;
@@ -38,17 +50,6 @@
   margin-bottom: 7px;
 }
 
-.gym__video {
-  position: absolute;
-  bottom: -111px;
-  left: 437px;
-  width: 364px;
-  height: 228px;
-  background-image: url("../img/video.png");
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
 //
 @media (max-width: $tablet-max-width) {
   .gym {
@@ -57,6 +58,16 @@
     margin-bottom: 179px;
     width: 88.28%;
     min-width: 678px;
+  }
+
+  .gym::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 88px);
+    left: calc(50% - 133px);
+    width: 266px;
+    height: 167px;
+    background-size: contain;
   }
 
   .gym__text {
@@ -87,14 +98,6 @@
     width: 678px;
     height: 345px;
   }
-
-  .gym__video {
-    bottom: -80px;
-    left: calc(50% - 133px);
-    width: 266px;
-    height: 167px;
-    background-size: contain;
-  }
 }
 
 //
@@ -102,9 +105,19 @@
   .gym {
     flex-wrap: wrap;
     padding-top: 44px;
-    margin-bottom: 48px;
+    margin-bottom: 237px;
     width: 100%;
     min-width: 320px;
+  }
+
+  .gym::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 160px);
+    width: 320px;
+    height: 167px;
+    background-size: cover;
   }
 
   .gym__text {
@@ -133,13 +146,5 @@
     width: 100%;
     max-width: 450px;
     height: 313px;
-  }
-
-  .gym__video {
-    @include margin-auto;
-    position: static;
-    width: 320px;
-    height: 167px;
-    background-size: cover;
   }
 }
