@@ -1,4 +1,8 @@
 .form-contacts-wrapper {
+  background-image: linear-gradient(to right, $dark-blue 50%, $white 50%);
+}
+
+.form-contacts-wrapper__inner {
   @include margin-auto;
   display: flex;
   width: 100%;
@@ -8,13 +12,17 @@
 //
 @media (max-width: $tablet-max-width) {
   .form-contacts-wrapper {
+    background-image: none;
+  }
+
+  .form-contacts-wrapper__inner {
     flex-direction: column;
   }
 }
 
 //
 @media (max-width: $tablet-max-width) {
-  .form-contacts-wrapper {
+  .form-contacts-wrapper__inner {
     margin-bottom: 0;
   }
 }
