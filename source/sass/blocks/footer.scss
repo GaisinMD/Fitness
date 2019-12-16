@@ -23,7 +23,7 @@
 }
 
 .footer__logo {
-  margin-right: 276px;
+  margin-right: 48.59%;
 }
 
 .footer__list {
@@ -31,6 +31,15 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.footer__list--left-side {
+  min-width: 193px;
+  width: 193px;
+}
+
+.footer__list--right-side {
+  max-width: 280px;
 }
 
 .footer__list-item {
@@ -70,6 +79,11 @@
   .footer__logo {
     padding-top: 3px;
     margin-right: 62px;
+  }
+
+  .footer__list--left-side {
+    min-width: 173px;
+    width: 173px;
   }
 
   .footer__logo img {
