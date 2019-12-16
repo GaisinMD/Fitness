@@ -62,7 +62,6 @@ var sliderFeedback = tns({
   'nextButton': '.feedback-carousel__arrow--right',
   'preventActionWhenRunning': true,
   'slideBy': '1',
-  'autoWidth': true,
   'autoHeight': true,
   'nav': false,
   'speed': 600,
