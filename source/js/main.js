@@ -63,6 +63,7 @@ var sliderFeedback = tns({
   'preventActionWhenRunning': true,
   'slideBy': '1',
   'autoWidth': true,
+  'autoHeight': true,
   'nav': false,
   'speed': 600,
   'items': 1,
