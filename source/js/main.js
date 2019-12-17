@@ -5,17 +5,19 @@ var animationTime = 300;
 var framesCount = 20;
 
 // переменные маски ввода телефона
-var customValidityMessage = 'Телефонный номер - минимум 10 символов';
+var customValidityMessage = 'Телефонный номер - минимум 10 цифр';
 var submit = document.querySelector('.form__button');
 var element = document.getElementById('phone');
+var maskPhone = '+{7}(000)000-00-00';
 var maskOptions = {
-  mask: '+{7}(000)000-00-00'
+  mask: maskPhone
 };
 
 // реализация маски ввода телефона
 var mask = IMask(element, maskOptions);
 
 //валидация длины ввода
+element.setAttribute('minlength', maskPhone.length - 2) ;
 submit.addEventListener('click', function (evt) {
   if (element.validity.tooShort) {
     element.setCustomValidity(customValidityMessage);
