@@ -5,6 +5,8 @@ var animationTime = 300;
 var framesCount = 20;
 
 // переменные маски ввода телефона
+var customValidityMessage = 'Телефонный номер - минимум 10 символов';
+var submit = document.querySelector('.form__button');
 var element = document.getElementById('phone');
 var maskOptions = {
   mask: '+{7}(000)000-00-00'
@@ -12,6 +14,15 @@ var maskOptions = {
 
 // реализация маски ввода телефона
 var mask = IMask(element, maskOptions);
+
+//валидация длины ввода
+submit.addEventListener('click', function (evt) {
+  if (element.validity.tooShort) {
+    element.setCustomValidity(customValidityMessage);
+  } else {
+    element.setCustomValidity('');
+  }
+});
 
 // реализация скролла
 anchors.forEach(function (item) {
