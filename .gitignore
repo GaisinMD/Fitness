@@ -2,6 +2,7 @@
 .idea
 .vscode
 package-lock.json
+desktop.ini
 *.ai
 *.log
 *.pdf
